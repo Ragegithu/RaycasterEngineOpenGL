@@ -1,0 +1,21 @@
+#pragma once
+#include <glad/glad.h>
+#include <math.h>
+
+class Ray3D
+{
+public:
+	bool drawWorld = false;
+	bool drawPlayerRay = false;
+	float depthOfFieldConstant;
+	Ray3D(float dr, float pi, float pa);
+	~Ray3D();
+	void DrawRay(float dr, float pi, float p2, float p3, float px, float py, float pa, int mapX, int mapY, int mapSize, int mapArray[]);
+private:
+	float dist(float ax, float ay, float bx, float by, float ang);
+	int r, mx, my, mp, dof;
+	float rx, ry, ra, xo, yo, disF;
+	float disH, hx, hy;
+	float disV, vx, vy;
+};
+
