@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Debug\RaycasterProject.exe</FullPath>
+      <FullPath>C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Debug\RaycasterProject.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

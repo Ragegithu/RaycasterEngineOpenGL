@@ -1,5 +1,6 @@
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\glad.c;C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\RaycasterProject\Debug\glad.obj
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\main.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\RaycasterProject\Debug\main.obj
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Map.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\RaycasterProject\Debug\Map.obj
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Player.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\RaycasterProject\Debug\Player.obj
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\RaycasterProject\Debug\Ray3D.obj
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\glad.c;C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\RaycasterProject\Debug\glad.obj
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Keyboard.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\RaycasterProject\Debug\Keyboard.obj
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\RaycasterProject\Debug\main.obj
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Map.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\RaycasterProject\Debug\Map.obj
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Player.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\RaycasterProject\Debug\Player.obj
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp;C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\RaycasterProject\Debug\Ray3D.obj

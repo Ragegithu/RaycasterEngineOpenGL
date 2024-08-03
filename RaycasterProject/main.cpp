@@ -21,14 +21,13 @@ float px = 320, py = 320,pdx,pdy,pa;
 int mx, my;
 bool showMapWindow = true;bool showWorldWindow = false;
 
-
 int mapArray[] = {
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
     1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1,
-    1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 1,
+    1, 0, 0, 1, 0, 1, 0, 2, 2, 0, 0, 0, 1, 1, 1, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1,
     1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1,
     1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1,
     1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1,
@@ -62,24 +61,36 @@ void initialize()
     }
 }
 
-
+bool w, a, s, d;
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
 {
-    if (key == GLFW_KEY_D && action == GLFW_REPEAT)
-    {
-        pa += 0.10;
+    if (key == GLFW_KEY_D && action == GLFW_PRESS){
+        d = true;
     }
-    if (key == GLFW_KEY_A && action == GLFW_REPEAT) {
-        pa -= 0.10;
+    if (key == GLFW_KEY_D && action == GLFW_RELEASE) {
+        d = false;
     }
-    if (key == GLFW_KEY_W && action == GLFW_REPEAT) {
-        px += pdx;
-        py += pdy;
+    if (key == GLFW_KEY_A && action == GLFW_PRESS) {
+        a = true;
     }
-    if (key == GLFW_KEY_S && action == GLFW_REPEAT) {
-        px -= pdx; 
-        py -= pdy;
+    if (key == GLFW_KEY_A && action == GLFW_RELEASE) {
+        a = false;
     }
+    if (key == GLFW_KEY_W && action == GLFW_PRESS) {
+        w = true;
+    }
+    if (key == GLFW_KEY_W && action == GLFW_FALSE) {
+        w = false;
+    }
+
+    if (key == GLFW_KEY_S && action == GLFW_PRESS) {
+        s = true;
+    }
+    if (key == GLFW_KEY_S && action == GLFW_RELEASE) {
+        s = false;
+    }
+
+
     if (key == GLFW_KEY_E && action == GLFW_PRESS) {
         showWorldWindow = false;
         showMapWindow = true;
@@ -135,6 +146,7 @@ int main(void)
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
     {
+
         /* Render here */
         initialize();
 
@@ -144,6 +156,22 @@ int main(void)
         Player player;
         player.size = 10;
         player.DrawPlayer(px + mx,py + my,pdx,pdy);
+        //input
+        if (d) {
+            pa += player.sens;
+        }
+        if (a) {
+            pa -= player.sens;
+        }
+        if (w) {
+            px += pdx * player.speed;
+            py += pdy * player.speed;
+        }
+        if (s) {
+            py -= pdy * player.speed;
+            px -= pdx * player.speed;
+        }
+
 
         player.showPlayer = showMapWindow;
         map.showMap = showMapWindow;

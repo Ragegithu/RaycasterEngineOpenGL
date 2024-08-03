@@ -1,40 +1,34 @@
 ﻿  Ray3D.cpp
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(20,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(20,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(20,13): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(22,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(23,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(26,23): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(26,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(26,13): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(28,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(29,20): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(37,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(39,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(44,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(46,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(53,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(65,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(75,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(77,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(82,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(84,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(91,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(103,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(114,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(114,19): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(114,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(121,19): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(121,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(129,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(129,19): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(129,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(136,19): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(136,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(143,19): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(143,15): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(144,19): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(144,15): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(159,28): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Ray3D.cpp(160,34): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
-  RaycasterProject.vcxproj -> C:\dev\cpp\Github\OpenRaycaster\RaycasterProject\Debug\RaycasterProject.exe
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(22,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(22,19): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(22,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(24,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(25,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(28,24): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(28,19): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(28,14): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(30,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(31,21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(40,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(42,8): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(47,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(49,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(56,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(68,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(78,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(80,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(85,31): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(87,9): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(94,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(106,11): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(118,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(124,18): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(133,20): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(133,15): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(147,19): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(147,15): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(148,19): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(148,15): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(165,28): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Ray3D.cpp(166,34): warning C4244: 'argument': conversion from 'float' to 'GLint', possible loss of data
+  RaycasterProject.vcxproj -> C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Debug\RaycasterProject.exe
