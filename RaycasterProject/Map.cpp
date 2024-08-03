@@ -23,6 +23,10 @@ void Map::DrawMap(int mapArray[])
 			{
 				glColor3f(1, 0.5, 0.5);
 			}
+			else if (mapArray[y * mapX + x] == 3)
+			{
+				glColor3f(0.5, 0.5, 1);
+			}
 			else { glColor3f(0, 0, 0); }
 
 			xo = x * mapS + moveX; yo = y * mapS + moveY;

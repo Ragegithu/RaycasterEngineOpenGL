@@ -3,7 +3,7 @@
 
 Ray3D::Ray3D(float dr, float pi, float pa)
 {
-	ra = pa - (dr * 50);
+	ra = pa - (dr * fov/2);
 	if (ra <      0) { ra += 2 * pi; }
 	if (ra > 2 * pi) { ra -= 2 * pi; }
 }
@@ -14,11 +14,13 @@ Ray3D::~Ray3D()
 
 void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, float pa, int mapX, int mapY, int mapSize, int mapArray[])
 {
-	for (r = 0; r<100; r++) 
+	for (r = 0; r<fov; r++) 
 	{
 		if (drawWorld) 
 		{
+			
 			//DRAW SKY
+			glLineWidth(8);
 			glColor3f(0.1, 0.3, 0.4);
 			glBegin(GL_LINES);
 			glVertex2f(r * 8 + 330, 0);
@@ -59,8 +61,8 @@ void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, 
 		{
 			mx = (int)(rx) >> 6;
 			my = (int)(ry) >> 6;
-			mp = my * mapX + mx;
-			if (mp > 0 && mp<mapX * mapY && mapArray[mp] > 0) // if hit wall
+			mpY = my * mapX + mx;
+			if (mpY > 0 && mpY<mapX * mapY && mapArray[mpY] > 0) // if hit wall
 			{
 				hx = rx;
 				hy = ry;
@@ -69,6 +71,7 @@ void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, 
 			}
 			else { rx += xo; ry += yo; dof += 1; }
 		}
+
 		//CHECK VERTECAL LINES
 		dof = 0;
 		disV = 100000, vx = px, vy = py;
@@ -108,36 +111,46 @@ void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, 
 			else { rx += xo; ry += yo; dof += 1; }
 		}
 
-		//set different wall colors and soon textures
-		if(disV < disH)
+		//CHECK WALL TYPE VERTICAL
+		if (disV < disH)
 		{
 			if (mapArray[mp] == 1) {
-				rx = vx;
-				ry = vy;
-				disF = disV;
 				glColor3f(0.5, 0.3, 0);
 			}
-			else if (mapArray[mp] == 2) {
-				rx = vx;
-				ry = vy;
-				disF = disV;
-				glColor3f(1, 0.3, 0);
+			if (mapArray[mp] == 2) {
+				glColor3f(0.7, 0.2, 0.3);
+			}
+			if (mapArray[mp] == 3) {
+				glColor3f(0.4, 0.2, 0.8);
 			}
 		}
-		else if (disH < disV)
+
+		//CHECK WALL TYPE HORIZONTAL
+		if (disH < disV)
 		{
-	//		if (mapArray[mp] == 2) {
-				rx = hx;
-				ry = hy;
-				disF = disH;
+			if (mapArray[mpY] == 1) {
 				glColor3f(0.7, 0.4, 0);
-	//		}
-	//		else if (mapArray[mp] == 2) {
-	//			rx = hx;
-	//			ry = hy;
-	//			disF = disH;
-	//			glColor3f(0.7, 0.1, 0.3);
-	//		}
+			}
+			else if (mapArray[mpY] == 2) {
+				glColor3f(0.7, 0.3, 0.3);
+			}
+			else if (mapArray[mpY] == 3) {
+				glColor3f(0.4, 0.3, 1.0);
+			}
+		}
+
+		if(disV < disH)
+		{
+			rx = vx;
+			ry = vy;
+			disF = disV;
+		}
+
+		if (disH < disV)
+		{
+			rx = hx;
+			ry = hy;
+			disF = disH;
 		}
 
 		//DRAW RAYCAST RAYS
@@ -159,12 +172,14 @@ void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, 
 			float lineO = 320 - lineH / 2; //<-- 320 IS HALF WINDOW HEIGHT RESOLUTION
 			if (lineH > 640 *2) { lineH = 640 * 2; } //<-- 640 is HALF WINDOW WIDTH
 
-
-			glLineWidth(8);
-			glBegin(GL_LINES);
-			glVertex2i(r * 8 + 330, lineO);
-			glVertex2i(r * 8 + 330, lineH + lineO);
+			//HERE
+			glBegin(GL_QUADS);
+			glVertex2f(r * 8 + 330 - 4, lineO);          // top-left corner
+			glVertex2f(r * 8 + 330 + 4, lineO);          // top-right corner
+			glVertex2f(r * 8 + 330 + 4, lineH + lineO);  // bottom-right corner
+			glVertex2f(r * 8 + 330 - 4, lineH + lineO);  // bottom-left corner
 			glEnd();
+			//END
 		}
 		ra += dr;
 		if (ra < 0) { ra += 2 * pi; }
