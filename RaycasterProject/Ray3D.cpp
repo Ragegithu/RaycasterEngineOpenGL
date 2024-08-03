@@ -47,7 +47,7 @@ void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, 
 			ry = (((int)py >> 6) << 6) + mapSize;
 			rx = (py - ry) * aTan + px;
 			yo = mapSize;
-			xo =-yo * aTan;
+			xo =-yo * aTan; 
 		}
 		if (ra == 0 || ra == pi) // looking straight left or right
 		{
