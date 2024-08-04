@@ -1,5 +1,8 @@
 #pragma once
 #include <glad/glad.h>
+#include "iostream"
+#include <chrono>
+#include <thread>
 #include <math.h>
 
 class Ray3D

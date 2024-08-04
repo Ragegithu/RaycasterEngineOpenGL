@@ -1,6 +1,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <chrono>
+#include <thread>
 #include <math.h>
 #include "Player.h"
 #include "Map.h"
@@ -19,28 +21,45 @@ int WindowHeight = 640;
 float playerSpeed = 20;
 float px = 320, py = 320,pdx,pdy,pa;
 int mx, my;
-bool showMapWindow = true;bool showWorldWindow = false;
+bool showMapWindow = false;bool showWorldWindow = true;
+
+const int TARGET_FPS = 60;
+const int FRAME_TIME = 1000 / TARGET_FPS;
+static int frameCount = 0;
+static auto lastTime = std::chrono::high_resolution_clock::now();
 
 int mapArray[] = {
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-    1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1,
-    1, 0, 0, 1, 0, 2, 0, 2, 2, 0, 0, 0, 1, 1, 1, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 1, 2, 1, 0, 2, 0, 0, 1, 1, 1, 1,
-    1, 0, 0, 0, 0, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 1, 3, 3, 0, 0, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 1, 0, 0, 0, 3, 0, 0, 1, 0, 0, 1, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 3, 0, 1, 1, 0, 1, 1, 0, 1,
-    1, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 1,
-    1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-    1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 };
 
-   
+void fpsLimiter() {
+    static auto lastTime = std::chrono::high_resolution_clock::now();
+
+    auto currentTime = std::chrono::high_resolution_clock::now();
+    auto timeDifference = std::chrono::duration_cast<std::chrono::milliseconds>(currentTime - lastTime);
+
+    if (timeDifference.count() < FRAME_TIME) {
+        std::this_thread::sleep_for(std::chrono::milliseconds(FRAME_TIME - timeDifference.count()));
+    }
+
+    lastTime = std::chrono::high_resolution_clock::now();
+}
+
 void initialize()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -182,6 +201,17 @@ int main(void)
         ray.depthOfFieldConstant = 40;
         ray.DrawRay(DR, PI, P2, P3, px, py, pa, map.mapX, map.mapY, map.mapS, mapArray);
 
+        fpsLimiter();
+        frameCount++;
+        auto currentTime = std::chrono::high_resolution_clock::now();
+        auto timeDifference = std::chrono::duration_cast<std::chrono::milliseconds>(currentTime - lastTime);
+
+        if (timeDifference.count() >= 1000) {
+            double fps = frameCount / (timeDifference.count() / 1000.0);
+            std::cout << "Current FPS: " << fps << std::endl;
+            frameCount = 0;
+            lastTime = currentTime;
+        }
         /* Swap front and back buffers */
         glfwSwapBuffers(window);
 

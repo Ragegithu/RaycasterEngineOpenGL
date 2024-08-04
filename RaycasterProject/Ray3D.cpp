@@ -1,5 +1,4 @@
 #include "Ray3D.h"
-#include "iostream"
 
 Ray3D::Ray3D(float dr, float pi, float pa)
 {
@@ -154,6 +153,7 @@ void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, 
 		}
 
 		//DRAW RAYCAST RAYS
+		/*
 		if (drawPlayerRay) {
 			glLineWidth(1);
 			glBegin(GL_LINES);
@@ -161,7 +161,7 @@ void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, 
 			glVertex2i(rx, ry);
 			glEnd();
 		}
-
+		*/
 		//DRAW WALLS HERE
 		if (drawWorld) {
 			
