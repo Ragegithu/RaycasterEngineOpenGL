@@ -1,8 +1,10 @@
-﻿  main.cpp
-C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(11,10): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(14,10): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(123,15): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(126,15): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(129,15): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(132,15): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+﻿  Map.cpp
+  main.cpp
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(10,10): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(13,10): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(127,15): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(130,15): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(133,15): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\main.cpp(136,15): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
   RaycasterProject.vcxproj -> C:\dev\cpp\Github\OpenRaycaster\RaycasterEngineOpenGL\RaycasterProject\Debug\RaycasterProject.exe

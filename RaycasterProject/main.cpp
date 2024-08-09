@@ -7,11 +7,15 @@
 #include "Player.h"
 #include "Map.h"
 #include "Ray3D.h"
-
 float PI = 3.14159265359;
 float P2 = PI / 2;
 float P3 = 3 * P2;
 float DR = 0.0174533;
+const int TARGET_FPS = 2800;
+const int FRAME_TIME = 1000 / TARGET_FPS;
+static int frameCount = 0;
+static auto lastTime = std::chrono::high_resolution_clock::now();
+
 
 
 
@@ -23,10 +27,6 @@ float px = 320, py = 320,pdx,pdy,pa;
 int mx, my;
 bool showMapWindow = false;bool showWorldWindow = true;
 
-const int TARGET_FPS = 60;
-const int FRAME_TIME = 1000 / TARGET_FPS;
-static int frameCount = 0;
-static auto lastTime = std::chrono::high_resolution_clock::now();
 
 int mapArray[] = {
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
@@ -46,6 +46,8 @@ int mapArray[] = {
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 };
+
+Map map(mapArray);
 
 void fpsLimiter() {
     static auto lastTime = std::chrono::high_resolution_clock::now();
@@ -113,6 +115,8 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     if (key == GLFW_KEY_E && action == GLFW_PRESS) {
         showWorldWindow = false;
         showMapWindow = true;
+        map.saveMapToFile(mapArray, 16, 16, "levelMap");
+        std::cout << "save el mafrood done" << std::endl;
     }
     if (key == GLFW_KEY_R && action == GLFW_PRESS) {
         showWorldWindow = true;
@@ -169,7 +173,6 @@ int main(void)
         /* Render here */
         initialize();
 
-        Map map(mapArray);
         map.moveX = mx; map.moveY = my;
 
         Player player;
@@ -194,6 +197,7 @@ int main(void)
 
         player.showPlayer = showMapWindow;
         map.showMap = showMapWindow;
+        map.DrawMap(mapArray);
 
         Ray3D ray(DR, PI, pa);
         ray.drawWorld = showWorldWindow;

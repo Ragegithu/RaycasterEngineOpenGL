@@ -2,11 +2,28 @@
 
 Map::Map(int mapArray[])
 {
-	DrawMap(mapArray);
 }
 
 Map::~Map()
 {
+}
+
+void Map::saveMapToFile(int map[], int rows, int cols, const std::string& filename) {
+	std::ofstream outFile(filename + ".txt");
+
+	if (!outFile) {
+		std::cerr << "Error opening file: " << filename << std::endl;
+		return;
+	}
+
+	for (int i = 0; i < rows; ++i) {
+		for (int j = 0; j < cols; ++j) {
+			outFile << map[i * mapX + j] << ",";
+		}
+		outFile << std::endl;
+	}
+
+	outFile.close();
 }
 
 void Map::DrawMap(int mapArray[])

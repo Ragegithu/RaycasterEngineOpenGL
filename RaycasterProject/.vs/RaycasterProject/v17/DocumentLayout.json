@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Ray3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Ray3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Ray3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Ray3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Keyboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Keyboard.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Ray3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Ray3D.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Ray3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Ray3D.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -33,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Keyboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{79DC9865-89CF-49F1-BCF5-FD2932535F9C}|RaycasterProject.vcxproj|solutionrelative:Keyboard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -45,36 +37,25 @@
       "VerticalTabListWidth": 133,
       "DocumentGroups": [
         {
-          "DockedWidth": 814,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 793,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Keyboard.cpp",
-              "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Keyboard.cpp",
-              "RelativeDocumentMoniker": "Keyboard.cpp",
-              "ToolTip": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Keyboard.cpp",
-              "RelativeToolTip": "Keyboard.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-29T15:32:23.501Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Map.cpp",
               "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Map.cpp",
               "RelativeDocumentMoniker": "Map.cpp",
               "ToolTip": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Map.cpp",
               "RelativeToolTip": "Map.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAZAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-18T15:58:03.713Z"
+              "WhenOpened": "2024-07-18T15:58:03.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Ray3D.cpp",
               "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Ray3D.cpp",
               "RelativeDocumentMoniker": "Ray3D.cpp",
@@ -82,12 +63,11 @@
               "RelativeToolTip": "Ray3D.cpp",
               "ViewState": "AQIAAKIAAAAAAAAAAAAAALoAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-07-18T19:00:00.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-18T19:00:00.687Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Player.cpp",
               "RelativeDocumentMoniker": "Player.cpp",
@@ -100,49 +80,38 @@
           ]
         },
         {
-          "DockedWidth": 848,
+          "DockedWidth": 869,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
               "ToolTip": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\main.cpp",
               "RelativeToolTip": "main.cpp",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAABkAAAAZAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAHUAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-07-18T12:05:50.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Keyboard.h",
-              "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Keyboard.h",
-              "RelativeDocumentMoniker": "Keyboard.h",
-              "ToolTip": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Keyboard.h",
-              "RelativeToolTip": "Keyboard.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-29T15:32:14.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Map.h",
               "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Map.h",
               "RelativeDocumentMoniker": "Map.h",
               "ToolTip": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Map.h",
               "RelativeToolTip": "Map.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-07-18T15:49:13.009Z"
+              "WhenOpened": "2024-07-18T15:49:13.009Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Ray3D.h",
               "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Ray3D.h",
               "RelativeDocumentMoniker": "Ray3D.h",
@@ -154,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\dev\\cpp\\Github\\OpenRaycaster\\RaycasterEngineOpenGL\\RaycasterProject\\Player.h",
               "RelativeDocumentMoniker": "Player.h",
