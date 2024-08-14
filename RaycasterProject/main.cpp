@@ -11,7 +11,7 @@ float PI = 3.14159265359;
 float P2 = PI / 2;
 float P3 = 3 * P2;
 float DR = 0.0174533;
-const int TARGET_FPS = 2800;
+const int TARGET_FPS = 400;
 const int FRAME_TIME = 1000 / TARGET_FPS;
 static int frameCount = 0;
 static auto lastTime = std::chrono::high_resolution_clock::now();
@@ -116,7 +116,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         showWorldWindow = false;
         showMapWindow = true;
         map.saveMapToFile(mapArray, 16, 16, "levelMap");
-        std::cout << "save el mafrood done" << std::endl;
+        std::cout << "Map Saved" << std::endl;
     }
     if (key == GLFW_KEY_R && action == GLFW_PRESS) {
         showWorldWindow = true;
