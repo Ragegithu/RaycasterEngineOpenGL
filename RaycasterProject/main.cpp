@@ -33,16 +33,16 @@ int mapArray[] = {
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 0, 1,
+    1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 1,
+    1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 1,
+    1, 0, 0, 3, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1,
-    1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1,
+    1, 0, 0, 0, 0, 2, 3, 2, 2, 2, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1,
+    1, 0, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 1, 1, 0, 1,
+    1, 0, 0, 0, 0, 2, 2, 2, 2, 2, 0, 0, 1, 1, 0, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1,
     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
 };
@@ -115,8 +115,9 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     if (key == GLFW_KEY_E && action == GLFW_PRESS) {
         showWorldWindow = false;
         showMapWindow = true;
-        map.saveMapToFile(mapArray, 16, 16, "levelMap");
-        std::cout << "Map Saved" << std::endl;
+        //map.saveMapToFile(mapArray, 16, 16, "levelMap");
+        map.loadMapFromFile(mapArray, 16, 16, "levelMap");
+        //std::cout << "Map Loaded" << std::endl;
     }
     if (key == GLFW_KEY_R && action == GLFW_PRESS) {
         showWorldWindow = true;
@@ -149,7 +150,7 @@ int main(void)
         return -1;
 
     /* Create a windowed mode window and its OpenGL context */
-    window = glfwCreateWindow(WindowWidth, WindowHeight, "Hello World", NULL, NULL);
+    window = glfwCreateWindow(WindowWidth, WindowHeight, "Raycaster Engine", NULL, NULL);
     if (!window)
     {
         glfwTerminate();

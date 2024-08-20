@@ -14,6 +14,7 @@ public:
 	int moveX, moveY;
 
 	void saveMapToFile(int map[], int rows, int cols, const std::string& filename);
+  void loadMapFromFile(int map[], int rows, int cols, const std::string& filename);
 	void DrawMap(int mapArray[]);
 private:
 	int x, y, xo, yo;

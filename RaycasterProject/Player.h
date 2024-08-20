@@ -9,6 +9,6 @@ public:
 	void DrawPlayer(float px, float py, float pdx, float pdy);
 	bool showPlayer;
 	int size;
-	float sens = 0.10f, speed = 1.5f;
+	float sens = 0.07f, speed = 1.0f;
 };
 
