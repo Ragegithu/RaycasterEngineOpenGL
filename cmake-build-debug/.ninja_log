@@ -1,7 +1,0 @@
-# ninja log v6
-1	242	1724037498690480236	CMakeFiles/RaycasterEngineOpenGL.dir/RaycasterProject/glad.c.o	780d0b9e30d03900
-1	516	1724037498690480236	CMakeFiles/RaycasterEngineOpenGL.dir/RaycasterProject/Map.cpp.o	e871a4ead6ee4d76
-2	573	1724037498691480236	CMakeFiles/RaycasterEngineOpenGL.dir/RaycasterProject/Ray3D.cpp.o	3fda751ec5ee7cc6
-1	508	1724047222042520168	CMakeFiles/RaycasterEngineOpenGL.dir/RaycasterProject/main.cpp.o	e1409bd4d8b34e91
-508	590	1724047222549519327	RaycasterEngineOpenGL	2ce32c1475140378
-2	91	1724037640601582026	CMakeFiles/RaycasterEngineOpenGL.dir/RaycasterProject/Player.cpp.o	a6d61d6d750dd9a4

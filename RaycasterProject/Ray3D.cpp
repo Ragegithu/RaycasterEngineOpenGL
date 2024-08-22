@@ -171,16 +171,14 @@ void Ray3D::DrawRay(float dr, float pi, float p2, float p3, float px, float py, 
 			float lineH = (mapSize * 320) / disF; // <- line height
 			float lineO = 320 - lineH / 2; //<-- 320 IS HALF WINDOW HEIGHT RESOLUTION
 			if (lineH > 640 *2) { lineH = 640 * 2; } //<-- 640 is HALF WINDOW WIDTH
-
-			//HERE
-			glBegin(GL_QUADS);
-			glVertex2f(r * 8 + 330 - 4, lineO);          // top-left corner
-			glVertex2f(r * 8 + 330 + 4, lineO);          // top-right corner
-			glVertex2f(r * 8 + 330 + 4, lineH + lineO);  // bottom-right corner
-			glVertex2f(r * 8 + 330 - 4, lineH + lineO);  // bottom-left corner
-			glEnd();
-			//END
-		}
+      glBegin(GL_QUADS);
+      glVertex2f(r * 8 + 330 - 4, lineO);
+      glVertex2f(r * 8 + 330 + 4, lineO);
+      glVertex2f(r * 8 + 330 + 4, lineH + lineO);
+      glVertex2f(r * 8 + 330 - 4, lineH + lineO);
+      glEnd();
+	    	
+    }
 		ra += dr;
 		if (ra < 0) { ra += 2 * pi; }
 		if (ra > 2 * pi) { ra -= 2 * pi; }

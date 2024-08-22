@@ -13,6 +13,7 @@ include_directories(RaycasterProject/Dependencies/Include/glad)
 include_directories(RaycasterProject/Dependencies/Include/glad/include)
 include_directories(RaycasterProject/Dependencies/Include/glad/include/glad)
 include_directories(RaycasterProject/Dependencies/Include/glad/include/KHR)
+include_directories(RaycasterProject/Dependencies/Include/stb_image)
 include_directories(RaycasterProject/Dependencies/Include/glfw)
 include_directories(RaycasterProject/Dependencies/Include/glfw/include)
 include_directories(RaycasterProject/Dependencies/Include/glfw/include/GLFW)
@@ -22,6 +23,7 @@ add_executable(RaycasterEngineOpenGL
     RaycasterProject/Dependencies/Include/glad/include/KHR/khrplatform.h
     RaycasterProject/Dependencies/Include/glfw/include/GLFW/glfw3.h
     RaycasterProject/Dependencies/Include/glfw/include/GLFW/glfw3native.h
+    RaycasterProject/Dependencies/Include/stb_image/stb_image.h
     RaycasterProject/glad.c
     RaycasterProject/main.cpp
     RaycasterProject/Map.cpp
@@ -30,5 +32,4 @@ add_executable(RaycasterEngineOpenGL
     RaycasterProject/Player.h
     RaycasterProject/Ray3D.cpp
     RaycasterProject/Ray3D.h)
-
 target_link_libraries(RaycasterEngineOpenGL PRIVATE glfw OpenGL::GL)

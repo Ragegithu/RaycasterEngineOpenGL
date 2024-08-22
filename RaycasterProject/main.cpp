@@ -115,9 +115,11 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     if (key == GLFW_KEY_E && action == GLFW_PRESS) {
         showWorldWindow = false;
         showMapWindow = true;
-        //map.saveMapToFile(mapArray, 16, 16, "levelMap");
+        map.saveMapToFile(mapArray, 16, 16, "levelMap");
+        std::cout << "Map Loaded" << std::endl;
+    }
+    if (key == GLFW_KEY_L){
         map.loadMapFromFile(mapArray, 16, 16, "levelMap");
-        //std::cout << "Map Loaded" << std::endl;
     }
     if (key == GLFW_KEY_R && action == GLFW_PRESS) {
         showWorldWindow = true;

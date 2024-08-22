@@ -1,3 +1,0 @@
-/home/ahmed/Documents/GithubProjects/RaycasterEngineOpenGL/bui/CMakeFiles/RaycasterEngineOpenGL.dir
-/home/ahmed/Documents/GithubProjects/RaycasterEngineOpenGL/bui/CMakeFiles/edit_cache.dir
-/home/ahmed/Documents/GithubProjects/RaycasterEngineOpenGL/bui/CMakeFiles/rebuild_cache.dir

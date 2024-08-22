@@ -1,5 +1,4 @@
 #include "Map.h"
-#include <fstream>
 
 Map::Map(int mapArray[])
 {
@@ -34,18 +33,28 @@ void Map::loadMapFromFile(int map[],int rows, int cols, const std::string& filen
     std::cerr << "Error Loading File"<< filename << std::endl;
     return;
   }
+  // RESET MAP ARRAY
+  for (int i = 0; i < rows; ++i) {
+    // Iterate over each column in the current row
+    for (int j = 0; j < cols; ++j) {
+      map[i * cols + j] = 0; // Reset the element to 0
+    }
+  }
+  //load array from txt file
+  
   for(int i = 0; i < rows; i++)
   {
     for (int j = 0; j < cols; j++) {
       char ch;
       inFile >> ch;
-      if (ch == ';') {
+      if (ch == ',') {
         --j;  // Skip the separator
       }else {
         map[i * cols + j] = ch - '0';  // Convert character to integer
       }
     }
   }
+      /**/
   inFile.close();
 }
 void Map::DrawMap(int mapArray[])
