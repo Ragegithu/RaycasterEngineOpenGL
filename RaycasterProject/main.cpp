@@ -7,6 +7,7 @@
 #include "Player.h"
 #include "Map.h"
 #include "Ray3D.h"
+
 float PI = 3.14159265359;
 float P2 = PI / 2;
 float P3 = 3 * P2;
